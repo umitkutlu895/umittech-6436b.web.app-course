@@ -1,0 +1,16 @@
+title: umittech-6436b.web.app
+description: umittech-6436b.web.app-template
+template:
+  repo: umittech-6436b.web.app-template
+  name: umittech-6436b.web.app
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
